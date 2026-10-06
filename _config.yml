@@ -1,0 +1,38 @@
+title: Claude Cowork at KHCC
+description: >-
+  A 30-minute hands-on tutorial on Claude Cowork for King Hussein Cancer
+  Center staff. Every demo uses synthetic data.
+theme: minima
+lang: en
+author: Iyad Sultan
+logo: /assets/img/android-chrome-512x512.png
+twitter:
+  card: summary
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/img/android-chrome-512x512.png
+header_pages: []
+show_excerpts: false
+
+baseurl: "/ClaudeCowork.io"
+url: "https://iyadsultan.github.io"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+plugins:
+  - jekyll-relative-links
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - research/
+  - tools/make-lesson-qrs.py
+  - vendor/
+  - .bundle/
+  - .claude/

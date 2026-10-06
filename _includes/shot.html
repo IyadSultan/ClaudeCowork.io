@@ -1,0 +1,8 @@
+{%- comment -%}
+  Real Cowork screenshot with caption and source.
+  include shot.html src="file.png" alt="..." caption="..." source="https://..."
+{%- endcomment -%}
+<figure class="cw-shot">
+  <img src="{{ site.baseurl }}/assets/img/cowork/{{ include.src }}" alt="{{ include.alt }}" loading="lazy">
+  <figcaption>{{ include.caption }}{% if include.source %} &middot; <a href="{{ include.source }}" target="_blank" rel="noopener">Source: Anthropic</a>{% endif %}</figcaption>
+</figure>

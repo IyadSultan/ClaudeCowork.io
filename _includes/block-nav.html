@@ -1,0 +1,4 @@
+<nav class="block-nav" aria-label="Lesson navigation">
+  {% if include.prev %}<a href="{{ site.baseurl }}{{ include.prev }}">&lsaquo; {{ include.prev_label }}</a>{% else %}<span></span>{% endif %}
+  {% if include.next %}<a href="{{ site.baseurl }}{{ include.next }}">{{ include.next_label }} &rsaquo;</a>{% endif %}
+</nav>
