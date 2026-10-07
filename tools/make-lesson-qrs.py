@@ -39,6 +39,7 @@ LESSONS = [
     "/block-05-schedule/",
     "/block-06-safety/",
     "/cheat-sheet/",
+    "/watch/",
 ]
 
 

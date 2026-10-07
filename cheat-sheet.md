@@ -77,6 +77,7 @@ Show me your plan before you start.</pre>
 
   <h2>Learn more</h2>
   <ul>
+    <li><a href="{{ site.baseurl }}/watch/">Watch: Learn 80% of Claude Cowork in under 20 minutes</a> (Jeff Su, with chapter links)</li>
     <li><a href="https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork" target="_blank" rel="noopener">Get started with Claude Cowork</a> (Anthropic help center)</li>
     <li><a href="https://support.claude.com/en/articles/13364135-use-claude-cowork-safely" target="_blank" rel="noopener">Use Claude Cowork safely</a></li>
     <li><a href="https://claude.com/resources/tutorials/get-started-in-claude-cowork-in-three-steps" target="_blank" rel="noopener">Claude Academy: get started in three steps</a></li>
@@ -86,5 +87,5 @@ Show me your plan before you start.</pre>
 
   {% include shot.html src="academy-get-started-card.png" alt="Claude Academy card titled Get started in Claude Cowork in three steps, with a New task window showing Slack and Google Drive" caption="Anthropic's own three-step tutorial on Claude Academy." source="https://claude.com/resources/tutorials/get-started-in-claude-cowork-in-three-steps" %}
 
-  {% include block-nav.html prev="/block-06-safety/" prev_label="Block 6 · Safe use at KHCC" next="/" next_label="Run of show" %}
+  {% include block-nav.html prev="/block-06-safety/" prev_label="Block 6 · Safe use at KHCC" next="/watch/" next_label="Watch at home" %}
 </div>

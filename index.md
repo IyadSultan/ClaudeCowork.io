@@ -108,6 +108,16 @@ permalink: /
     <span class="arrow" aria-hidden="true">&#8250;</span>
   </a>
 
+  <a class="cw-card" href="{{ site.baseurl }}/watch/">
+    <div class="cw-num tone-gold">&#9654;</div>
+    <div class="cw-card-body">
+      <p class="title">Watch at home: Learn 80% of Cowork in 20 minutes</p>
+      <p class="desc">Jeff Su's video, chapter by chapter, linked to each block, with KHCC versions of his examples.</p>
+    </div>
+    <span class="cw-time">19 min</span>
+    <span class="arrow" aria-hidden="true">&#8250;</span>
+  </a>
+
 </div>
 
 <div class="callout callout-note">
