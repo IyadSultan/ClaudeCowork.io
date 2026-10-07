@@ -45,6 +45,23 @@ permalink: /block-00-what/
     </div>
   </div>
 
+  <h2>Same request, two ways</h2>
+  <p>Chat gets <strong>task-first</strong> wording: tell it what to do, then do the work yourself. Cowork gets <strong>outcome-first</strong> wording: the end result, the limits, and how good it must be.</p>
+  <div class="cw-compare">
+    <div class="cw-compare-card">
+      <span class="tag">Chat &middot; task first</span>
+      <p>&ldquo;Look at my committee minutes and suggest a naming convention and folder structure.&rdquo;</p>
+      <p><em>You get advice in text. You move the files.</em></p>
+    </div>
+    <div class="cw-compare-card is-magenta">
+      <span class="tag">Cowork &middot; outcome first</span>
+      <p>&ldquo;I have 15 minutes files in this folder. I need them in one subfolder per committee, renamed YYYY-MM-DD_committee. Ask before moving anything.&rdquo;</p>
+      <p><em>A few minutes later the folder is done.</em></p>
+    </div>
+  </div>
+  <p>Two practical differences, as Jeff Su describes them: Chat uploads files to the cloud, with a cap of 20 files per conversation and 30 MB per file, while Cowork reads files directly in your folder. Chat also leaves the result in the chat window, while Cowork saves the finished file in your folder.</p>
+  {% include vid.html t="25" at="00:25" %}
+
   {% include shot.html src="cowork-home-desktop.png" alt="Claude Desktop home screen. Under the message box, a switch reads Chat and Cowork, with Cowork selected. The sidebar lists New, Projects, Artifacts, Scheduled, Dispatch and Customize." caption="The Chat | Cowork switch in Claude Desktop. Team and Enterprise accounts still see this switch." %}
 
   <h2>What changed in September and October 2026</h2>

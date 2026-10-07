@@ -67,10 +67,18 @@ Show me your plan before you start.</pre>
     <p class="demo-status" id="s2-status" role="status"></p>
   </div>
 
-  <h2>Three more briefs to try</h2>
+  <h2>More briefs to try</h2>
   <pre class="cw-prompt">Organise my practice folder: one subfolder per committee, rename files as YYYY-MM-DD_committee_minutes, and give me a list of what you moved. Ask before moving anything.</pre>
   <pre class="cw-prompt">Read quality-counts.csv. Build an Excel workbook with a monthly trend chart, a 3-month moving average, and conditional formatting that marks any month above the yearly mean in gold.</pre>
   <pre class="cw-prompt">Draft a one-page memo to nursing managers announcing the new hand-hygiene audit schedule, using only the decisions in the minutes. Mark anything you had to assume.</pre>
+
+  <h2>Three jobs Chat cannot finish</h2>
+  <p>Each needs many files, big files, or a real file back in your folder.</p>
+  <pre class="cw-prompt">I need an expense report from the receipt scans in my receipts folder. Give me an Excel sheet with date, vendor, category, amount, and a totals row. If anything is blurry or unclear, mark it "verify".</pre>
+  <pre class="cw-prompt">This guideline PDF is too big to work with. Split it into separate files, one per chapter or major section, with descriptive file names so I can find what I need at a glance.</pre>
+  <pre class="cw-prompt">These slides are images and cannot be edited. Rebuild this as a clean, editable PowerPoint in KHCC colours: same content, same slide order, real text boxes.</pre>
+  <p>The rebuilt deck will not be perfect. It is still far quicker to fix than to retype.</p>
+  {% include vid.html t="252" at="04:12" note="receipts, PDF split, slide rebuild" %}
 
   <div class="callout callout-takehome">
     Outcome, format, inputs, reader. Ask for the plan first. Check the file before it leaves your desk.

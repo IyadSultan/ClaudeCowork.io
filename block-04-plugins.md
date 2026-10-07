@@ -62,8 +62,17 @@ permalink: /block-04-plugins/
   </div>
 
   <div class="demo-stage" id="s4-3" hidden>
-    <p class="demo-stage-kicker">Turn a habit into a skill</p>
-    <p class="demo-stage-copy">Anything you have briefed three times is a skill. Ask Cowork to write it, then save it under Customize &rarr; Skills.</p>
+    <p class="demo-stage-kicker">Do the job first, then make the skill</p>
+    <p class="demo-stage-copy">The best skills come from real work, not from a blank form.</p>
+    <ol class="cw-steps">
+      <li>Do the task with Cowork once, for example merging three unit updates into one monthly report.</li>
+      <li>Give feedback until it is right: &ldquo;Lead with three numbers, then three highlights and three lowlights. Under 300 words. PDF.&rdquo;</li>
+      <li>Then say: <em>&ldquo;Go back through our conversation and create a monthly-report skill that captures this whole workflow.&rdquo;</em> Answer its questions.</li>
+      <li>If it asks you to install it: <strong>Customize &rarr; Skills &rarr; + &rarr; Upload a skill</strong>, and pick the file it made.</li>
+    </ol>
+    <p class="demo-stage-copy">Check that Anthropic's <strong>skill-creator</strong> skill is switched on under Customize &rarr; Skills. To change a skill later, tell Cowork which skill and what to change, then re-install it. Keep a backup copy of your skills: they do not move to a new computer on their own.</p>
+    {% include vid.html t="638" at="10:38" note="building a weekly-report skill" %}
+    <p class="demo-stage-copy">Or write one directly:</p>
     <pre class="cw-prompt">Write me a skill called committee-minutes.
 When I give it raw meeting notes, it should produce KHCC-style minutes:
 - header with committee, date, chair (no attendee names)

@@ -49,6 +49,16 @@ Do not send anything to anyone.</pre>
     </div>
   </div>
 
+  <h2>Why a schedule works well: one worked example</h2>
+  <p>Jeff Su runs an inbox triage every morning at 6:00. It works because three earlier pieces are already in place:</p>
+  <ol class="cw-steps">
+    <li><strong>Rules in a file.</strong> His triage rules sit in a Markdown file in the folder (Block 1).</li>
+    <li><strong>A connector.</strong> Gmail is connected, so Cowork can read new mail (Block 3).</li>
+    <li><strong>Memory.</strong> For the first week he corrected the drafts; <code>memory.md</code> kept every correction, so later drafts sound like him (Block 1).</li>
+  </ol>
+  <p>KHCC version: a weekly digest of new committee minutes, with action items checked against the tracker and <strong>draft</strong> reminders to owners that you read and send yourself. No patient email, no automatic sending.</p>
+  {% include vid.html t="1004" at="16:44" note="scheduled inbox triage" %}
+
   <h2>What about Dispatch?</h2>
   <p>Dispatch lets you text a task from your phone to your desktop. It is closed to new users, so we skip it today. Cowork on the web and the phone app is available; it can start, steer and review tasks.</p>
 

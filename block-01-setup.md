@@ -11,7 +11,7 @@ permalink: /block-01-setup/
   </div>
   <h1>Set up: app, folder, project, instructions</h1>
 
-  <p class="demo-lead">Five steps, done once. After that every task starts in the right folder with your rules already loaded.</p>
+  <p class="demo-lead">Six steps, done once. After that every task starts in the right folder with your rules already loaded.</p>
 
   <div class="demo-preset-row" data-stages="s1-" role="group" aria-label="Setup steps">
     <button type="button" class="demo-chip">Install</button>
@@ -19,6 +19,7 @@ permalink: /block-01-setup/
     <button type="button" class="demo-chip">Folder</button>
     <button type="button" class="demo-chip">Project</button>
     <button type="button" class="demo-chip">Instructions</button>
+    <button type="button" class="demo-chip">Memory</button>
   </div>
 
   <div class="demo-stage" id="s1-0">
@@ -36,7 +37,9 @@ permalink: /block-01-setup/
 
   <div class="demo-stage" id="s1-2" hidden>
     <p class="demo-stage-kicker">Give it one working folder</p>
-    <p class="demo-stage-copy">Cowork can read and write only in folders you connect. Make a new, empty folder for this course, for example <code>Documents/Cowork-KHCC</code>, and connect only that one. Do not connect Desktop, Downloads or your whole drive.</p>
+    <p class="demo-stage-copy">Cowork can read and write only in folders you connect. Make a new, empty folder called <code>Documents/Cowork Playground</code> and connect only that one. Do not connect Desktop, Downloads or your whole drive. The first time, Cowork asks for access to the folder.</p>
+    <p class="demo-stage-copy">Keep every file you work on inside the playground. A file dragged in from Downloads may appear in the task, but Cowork cannot read it.</p>
+    {% include vid.html t="199" at="03:19" %}
     <p class="demo-stage-copy">Folders you have connected show under <strong>Settings &rarr; Trusted folders</strong>. You can remove them there.</p>
     <div class="callout callout-safety">The folder you connect must hold synthetic or de-identified files only. No MRNs, names, or national numbers.</div>
   </div>
@@ -50,7 +53,7 @@ permalink: /block-01-setup/
 
   <div class="demo-stage" id="s1-4" hidden>
     <p class="demo-stage-kicker">Write your standing instructions</p>
-    <p class="demo-stage-copy">Global instructions apply to every session: <strong>Settings &rarr; Cowork &rarr; Edit</strong> in the older layout, <strong>Settings &rarr; General &rarr; Instructions for Claude</strong> in the new one. Keep them short.</p>
+    <p class="demo-stage-copy">Global instructions apply to every session: <strong>Settings &rarr; Cowork &rarr; Edit</strong> in the older layout, <strong>Settings &rarr; General &rarr; Instructions for Claude</strong> in the new one. Keep them short. Start with guardrails, like training wheels you remove later.</p>
     {% include shot.html src="global-instructions.png" alt="Global instructions text box reading Add instructions for Claude to follow in all Cowork sessions, with Cancel and Save buttons" caption="The global instructions box." source="https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork" %}
     <pre class="cw-prompt">I work at King Hussein Cancer Center, Amman.
 Write in plain English, short sentences, British spelling.
@@ -58,6 +61,17 @@ Save every output in the folder I connected, never elsewhere.
 Ask before deleting, moving, or overwriting any file.
 If a file looks like it holds patient identifiers (MRN, name, national number), stop and tell me.
 Use the KHCC colours for slides: teal #237A9B, gold #E4B325, magenta #B6447D.</pre>
+    <p class="demo-stage-copy">While in Settings, open <strong>Capabilities</strong> and turn on both memory options.</p>
+    {% include vid.html t="139" at="02:19" note="settings and starter instructions" %}
+  </div>
+
+  <div class="demo-stage" id="s1-5" hidden>
+    <p class="demo-stage-kicker">Memory lives in files you can read</p>
+    <p class="demo-stage-copy">Cowork can keep what it learns in two plain files at the top of your folder: <code>CLAUDE.md</code> (how to work here) and <code>memory.md</code> (what it has learned from your corrections). Open them, read them, edit them.</p>
+    <p class="demo-stage-copy">Try it on a synthetic minutes file: ask for a 200-word summary, rewrite it the way you like, then say:</p>
+    <pre class="cw-prompt">I changed your summary. Compare your version with mine and save my preferences in CLAUDE.md and memory.md at the root of this folder, so you follow them next time.</pre>
+    <p class="demo-stage-copy">Every correction you save makes the next run closer to how you work. Never let a patient detail land in these files.</p>
+    {% include vid.html t="374" at="06:14" note="persistent memory" %}
   </div>
 
   <div class="demo-nav-row">
@@ -66,7 +80,7 @@ Use the KHCC colours for slides: teal #237A9B, gold #E4B325, magenta #B6447D.</p
   </div>
 
   <div class="callout callout-takehome">
-    One folder, one project, five lines of instructions. Set them once; every later task inherits them.
+    One playground folder, one project, a few lines of guardrails, memory on. Set them once; every later task inherits them.
   </div>
 
   {% include block-nav.html prev="/block-00-what/" prev_label="Block 0 · What Cowork is" next="/block-02-first-task/" next_label="Block 2 · Your first task" %}
