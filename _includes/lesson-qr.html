@@ -17,6 +17,7 @@
     height="108"
     onerror="this.onerror=null;this.src='{{ site.baseurl }}/qr-code.png';"
   />
+  <div class="lesson-qr-text">
   {%- if page.url contains '/block-' or page.url contains '/cheat-sheet' -%}
   <p class="lesson-qr-caption">This lesson</p>
   {%- else -%}
@@ -24,5 +25,6 @@
   {%- endif -%}
   {%- comment -%} Live clock: filled in by assets/js/lesson-clock.js from this computer's clock. {%- endcomment -%}
   <p class="lesson-qr-clock" id="lesson-qr-clock" aria-live="off"></p>
+  </div>
 </aside>
 <script src="{{ "/assets/js/lesson-clock.js" | relative_url }}" defer></script>
