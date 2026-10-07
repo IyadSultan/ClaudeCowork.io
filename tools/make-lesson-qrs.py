@@ -40,6 +40,7 @@ LESSONS = [
     "/block-06-safety/",
     "/cheat-sheet/",
     "/watch/",
+    "/claude-md/",
 ]
 
 

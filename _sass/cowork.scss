@@ -658,3 +658,264 @@ kbd {
     text-decoration: none;
 }
 .cw-vid a:hover { background: #F8EBC0; }
+
+// ---------- CLAUDE.md demo (ported from AIBedside.io Block 5.5) ----------
+// Block 5.5 — CLAUDE.md kitchen: standing orders, dropped policies, wiki, summary.
+.b55-kitchen {
+    margin: 0.85rem 0 0;
+}
+
+.b55-kitchen figcaption {
+    margin-top: 0.55rem;
+    font-size: 0.85rem;
+    color: var(--muted-foreground);
+    line-height: 1.45;
+}
+
+.b55-kitchen .demo-shot {
+    object-fit: contain;
+    background: #ECEFF1;
+}
+
+.b55-files {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.65rem;
+    margin: 0.85rem 0 1rem;
+}
+
+.b55-file {
+    display: block;
+    background: #fff;
+    border: 1px solid #E0E0E0;
+    border-left: 4px solid var(--khcc-magenta);
+    border-radius: 0.5rem;
+    padding: 0.75rem 0.85rem;
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+.b55-file:hover {
+    border-color: var(--khcc-magenta);
+    box-shadow: 0 4px 14px rgba(182, 68, 125, 0.14);
+}
+
+.b55-file-wiki {
+    border-left-color: var(--khcc-teal);
+}
+
+.b55-file .code {
+    margin: 0;
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--khcc-magenta);
+}
+
+.b55-file-wiki .code {
+    color: var(--khcc-teal);
+}
+
+.b55-file .name {
+    margin: 0.2rem 0 0;
+    font-weight: 700;
+    color: var(--khcc-teal-ink);
+}
+
+.b55-file .meta {
+    margin: 0.15rem 0 0;
+    font-size: 0.78rem;
+    color: var(--muted-foreground);
+}
+
+.demo-frame.b55-summary-frame {
+    height: 720px;
+    background: #F3F5F8;
+}
+
+// Obsidian-style wiki map: dark notes, pale source files, thin edges.
+.b55-graph {
+    margin: 1.1rem 0 0.35rem;
+    background: #FAFBFD;
+    border: 1px solid #E0E0E0;
+    border-radius: 0.65rem;
+    overflow: hidden;
+}
+
+.b55-graph svg {
+    display: block;
+    width: 100%;
+    height: 420px;
+}
+
+.b55-graph figcaption {
+    padding: 0.65rem 0.9rem 0.85rem;
+    border-top: 1px solid #ECEFF1;
+}
+
+.b55-graph-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.85rem;
+    margin: 0 0 0.35rem;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #455A64;
+}
+
+.b55-graph-key {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.b55-graph-key::before {
+    content: "";
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.b55-graph-key-note::before {
+    background: var(--khcc-teal-ink);
+}
+
+.b55-graph-key-file::before {
+    background: #E8EEF3;
+    border: 1.5px solid #90A4AE;
+    box-sizing: border-box;
+}
+
+.b55-graph-hint {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--muted-foreground);
+    line-height: 1.45;
+}
+
+.b55-graph-edge {
+    stroke: #CFD8DC;
+    stroke-width: 1.15;
+}
+
+.b55-graph-edge.is-on {
+    stroke: var(--khcc-magenta);
+    stroke-width: 1.8;
+}
+
+.b55-graph-node {
+    cursor: pointer;
+}
+
+.b55-graph-node circle {
+    transition: r 0.15s ease-out, stroke-width 0.15s ease-out;
+}
+
+.b55-graph-note circle {
+    fill: var(--khcc-teal-ink);
+    stroke: var(--khcc-teal-ink);
+}
+
+.b55-graph-file circle {
+    fill: #E8EEF3;
+    stroke: #90A4AE;
+    stroke-width: 1.5;
+}
+
+.b55-graph-node.is-on circle,
+.b55-graph-node:focus-visible circle {
+    stroke: var(--khcc-magenta);
+    stroke-width: 2.5;
+}
+
+.b55-graph-node:focus {
+    outline: none;
+}
+
+.b55-graph-node:focus-visible {
+    outline: 2px solid var(--khcc-magenta);
+    outline-offset: 3px;
+}
+
+.b55-graph-label {
+    font-size: 11px;
+    fill: #455A64;
+    pointer-events: none;
+}
+
+.b55-graph-note .b55-graph-label {
+    font-weight: 700;
+    fill: var(--khcc-teal-ink);
+}
+
+.b55-graph-node.is-on .b55-graph-label,
+.b55-graph-node:focus-visible .b55-graph-label {
+    fill: var(--khcc-magenta);
+}
+
+@media screen and (max-width: 720px) {
+    .b55-files {
+        grid-template-columns: 1fr;
+    }
+
+    .b55-graph svg {
+        height: 360px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .b55-graph-node circle {
+        transition: none;
+    }
+}
+.demo-shot {
+    display: block;
+    width: 100%;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: #fff;
+}
+
+.demo-frame {
+    display: block;
+    width: 100%;
+    height: 640px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: #faf8f4;
+}
+
+.demo-open-row { margin: 0.85rem 0; }
+
+.demo-ask {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0.55rem 1.1rem;
+    border: 0;
+    border-radius: var(--radius-sm);
+    background: var(--khcc-teal-ink);
+    color: #fff !important;
+    font: inherit;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+.demo-ask:hover { background: var(--primary-strong); }
+
+.demo-controls { display: flex; align-items: center; gap: 0.85rem; margin: 0.5rem 0 1.5rem; }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}

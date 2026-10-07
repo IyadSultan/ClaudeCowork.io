@@ -48,6 +48,16 @@ permalink: /
     <span class="arrow" aria-hidden="true">&#8250;</span>
   </a>
 
+  <a class="cw-card" href="{{ site.baseurl }}/claude-md/">
+    <div class="cw-num tone-magenta">1+</div>
+    <div class="cw-card-body">
+      <p class="title">Go deeper: CLAUDE.md, standing orders for a folder</p>
+      <p class="desc">Five clashing ward policies in, a linked wiki and a quality review out. Optional if time allows.</p>
+    </div>
+    <span class="cw-time">+5</span>
+    <span class="arrow" aria-hidden="true">&#8250;</span>
+  </a>
+
   <a class="cw-card" href="{{ site.baseurl }}/block-02-first-task/">
     <div class="cw-num tone-dark">2</div>
     <div class="cw-card-body">

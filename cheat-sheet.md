@@ -77,6 +77,7 @@ Show me your plan before you start.</pre>
 
   <h2>Learn more</h2>
   <ul>
+    <li><a href="{{ site.baseurl }}/claude-md/">CLAUDE.md: standing orders for a folder</a> (Cedar Ward demo, downloadable)</li>
     <li><a href="{{ site.baseurl }}/watch/">Watch: Learn 80% of Claude Cowork in under 20 minutes</a> (Jeff Su, with chapter links)</li>
     <li><a href="https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork" target="_blank" rel="noopener">Get started with Claude Cowork</a> (Anthropic help center)</li>
     <li><a href="https://support.claude.com/en/articles/13364135-use-claude-cowork-safely" target="_blank" rel="noopener">Use Claude Cowork safely</a></li>

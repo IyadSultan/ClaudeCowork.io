@@ -72,6 +72,7 @@ Use the KHCC colours for slides: teal #237A9B, gold #E4B325, magenta #B6447D.</p
     <pre class="cw-prompt">I changed your summary. Compare your version with mine and save my preferences in CLAUDE.md and memory.md at the root of this folder, so you follow them next time.</pre>
     <p class="demo-stage-copy">Every correction you save makes the next run closer to how you work. Never let a patient detail land in these files.</p>
     {% include vid.html t="374" at="06:14" note="persistent memory" %}
+    <p class="demo-stage-copy"><a href="{{ site.baseurl }}/claude-md/">Go deeper: see a full CLAUDE.md turn five ward policies into a wiki and a quality review &rsaquo;</a></p>
   </div>
 
   <div class="demo-nav-row">
